@@ -115,5 +115,28 @@
 #     print(e[temp])
 #     temp=temp+1
 
-tempDict={"yanwen":"001","Noran":"002","Shawn":"003"}
+# tempDict={"yanwen":"001","Noran":"002","Shawn":"003"}
+# tempDict1={"employer":{"yanwen":{"ID":"001","Salary":"20000"},
+#                        "haha":{"ID":"002","Salary":"10000"}}}
+# print(tempDict1)
+# print(tempDict1.get("employer")) #{'Yanwen': {'ID': '001', 'Salary': '20000'}, 'Haha': {'ID': '002', 'Salary': '10000'}}
+# for x,y in tempDict.items():
+#     print(x,y)
+#     '''
+#     yanwen 001
+#     Noran 002
+#     Shawn 003
+#     '''
+# tempDict["yanwen"]="000"
+# tempDict["chen"]="007"
+# print(tempDict) #{'yanwen': '000', 'Noran': '002', 'Shawn': '003', 'chen': '007'}
 
+# print(tempDict.pop("Noran")) #002
+# print(tempDict.popitem()) #('chen', '007')
+
+import pandas as pd
+tempDict1={"employer":{"yanwen":{"ID":"001","Salary":"20000"},
+                        "haha":{"ID":"002","Salary":"10000"}}}
+
+df=pd.DataFrame(tempDict1["employer"])
+print(df)
