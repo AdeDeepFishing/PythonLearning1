@@ -134,9 +134,23 @@
 # print(tempDict.pop("Noran")) #002
 # print(tempDict.popitem()) #('chen', '007')
 
-import pandas as pd
-tempDict1={"employer":{"yanwen":{"ID":"001","Salary":"20000"},
-                        "haha":{"ID":"002","Salary":"10000"}}}
+# import pandas as pd
+# tempDict1={"employer":{"yanwen":{"ID":"001","Salary":"20000"},
+#                         "haha":{"ID":"002","Salary":"10000"}}}
 
-df=pd.DataFrame(tempDict1["employer"])
-print(df)
+# df=pd.DataFrame(tempDict1["employer"])
+# print(df)
+# '''
+#        yanwen   haha
+# ID        001    002
+# Salary  20000  10000
+# '''
+
+x=10
+y=2
+print(x+y) #12
+print(x**y) #100
+
+
+
+
