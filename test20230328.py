@@ -146,11 +146,71 @@
 # Salary  20000  10000
 # '''
 
-x=10
-y=2
-print(x+y) #12
-print(x**y) #100
+# x=10
+# y=2
+# print(x+y) #12
+# print(x**y) #100
 
+# list1=[10,20,30]
+# list2=[10,20,30]
+# list3=[10,50,30]
 
+# print(list1 in list2)
+# print(list1 not in list3)
+# print("banana" in list1)
+# print(list1 is list2)
+# '''
+# >>> print(list1 in list2)
+# False
+# >>> print(list1 not in list3)
+# True
+# >>> print("banana" in list1)
+# False
+# >>> print(list1 is list2)
+# False
+# '''
 
+# print(10 & 12) #8
+# '''
+# 10: 1010
+# 12: 1100
+# 1010 & 1100 == 1000, only 1 and 1 will be 1, this is &
+# so 1000 == 8 so it will print 8
+# '''
+# print(10 | 12) #14
+# '''
+# 10: 1010
+# 12: 1100
+# 1010 & 1100 == 1110, this is |
+# so 1110 == 14 so it will print 14 
+# '''
+
+# print(10 >> 2) #2
+# '''
+# 10: 1010
+# right shift 2 places: 0b10
+# gonna be 2
+# '''
+# print(10 << 2) #40
+# '''
+# 10: 1010
+# left shift 2 places: 101000
+# '''
+
+'''
+bitwise operators:
+& AND, both of them are 1
+| OR, one of them is 1
+^ XOR, if and only if one of the bits is 1
+~ NOT, inverts all bits
+<< Left shift, fill with 0 while shifting left
+>> Right shift, cut off the parts while shifting right
+'''
+
+count =0
+while count<9:
+    print("number: ",count)
+    count+=1
+
+print("the end")
 
