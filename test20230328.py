@@ -197,20 +197,180 @@
 # left shift 2 places: 101000
 # '''
 
-'''
-bitwise operators:
-& AND, both of them are 1
-| OR, one of them is 1
-^ XOR, if and only if one of the bits is 1
-~ NOT, inverts all bits
-<< Left shift, fill with 0 while shifting left
->> Right shift, cut off the parts while shifting right
-'''
+# '''
+# bitwise operators:
+# & AND, both of them are 1
+# | OR, one of them is 1
+# ^ XOR, if and only if one of the bits is 1
+# ~ NOT, inverts all bits
+# << Left shift, fill with 0 while shifting left
+# >> Right shift, cut off the parts while shifting right
+# '''
 
-count =0
-while count<9:
-    print("number: ",count)
-    count+=1
+# count =0
+# while count<9:
+#     print("number: ",count)
+#     count+=1
 
-print("the end")
+# print("the end")
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+# from matplotlib.colors import LinearSegmentedColormap
+
+# # Julia set function
+# def julia(c, z, max_iter):
+#     for n in range(max_iter):
+#         if abs(z) > 2:
+#             return n
+#         z = z * z + c
+#     return max_iter
+
+# # Image size (pixels)
+# width, height = 800, 800
+
+# # Plot window (real and imaginary axis)
+# re_min, re_max = -2, 2
+# im_min, im_max = -2, 2
+
+# # Maximum number of iterations
+# max_iter = 256
+
+# # Create an empty image
+# image = np.zeros((height, width))
+
+# # Julia set constant
+# c = complex(-0.8, 0.156)
+
+# # Generate Julia set fractal
+# for y in range(height):
+#     for x in range(width):
+#         re = x * (re_max - re_min) / (width - 1) + re_min
+#         im = y * (im_max - im_min) / (height - 1) + im_min
+#         z = complex(re, im)
+#         image[y, x] = julia(c, z, max_iter)
+
+# # Create a custom pink colormap
+# cmap = LinearSegmentedColormap.from_list("pink", ["black", "pink"])
+
+# # Plot and display the fractal
+
+# plt.imshow(image, cmap=cmap, extent=(re_min, re_max, im_min, im_max))
+# plt.colorbar()
+# plt.title("Julia Set Fractal")
+# plt.show()
+
+# n,m=0,"abc"
+# n+=1
+
+# if 
+# elif 
+# else
+
+# and, or
+
+# for i in range(5):
+#     print(i) # 0 1 2 3 4
+    
+# for i in range(2,6):
+#     print(i) # 2 3 4 5
+    
+# for i in range(5,1,-1):
+#     print(i) # 5 4 3 2
+
+# for i in range(5,1,-2):
+#     print(i) # 5 3
+
+# #// will go down
+# print(5/2) #2.5
+# print(5//2) #2
+# print(-3/2) #-1.5
+# print(-3//2) #-2
+# print(int(-3//2)) #-2
+
+# print(10%3) #1
+# print(-10%3) #2
+
+# import math
+# print(math.floor(3/2))
+# print(math.ceil(3/2))
+# print(math.sqrt(3/2))
+# print(math.pow(2,3))
+# '''
+# 1
+# 2
+# 1.224744871391589
+# 8.0
+# '''
+
+# float("inf")
+# float("-inf")
+
+# import math
+# print(math.pow(2,200))
+# print(math.pow(2,200)<float("inf"))
+# '''
+# 1.6069380442589903e+60
+# True
+# '''
+
+# arr=[1,2,3,9,3,8]
+# print(arr)
+
+# arr.append(4)
+# print(arr)
+
+# arr.pop()
+# print(arr)
+
+# arr.insert(1,7)
+# print(arr)
+
+# arr[0]=0
+# arr[3]=0
+# print(arr)
+
+# '''
+# [1, 2, 3, 9, 3, 8]
+# [1, 2, 3, 9, 3, 8, 4]
+# [1, 2, 3, 9, 3, 8]
+# [1, 7, 2, 3, 9, 3, 8]
+# [0, 7, 2, 0, 9, 3, 8]
+# '''
+
+# n=5
+# arr=[1]*n
+# print(arr) #[1, 1, 1, 1, 1]
+
+# arr=[1,2,3]
+# print(arr[-1]) #3
+# print(arr[-2]) #2
+
+# arr=[1,2,3,4]
+# print(arr[1:3]) #[2, 3]
+
+# a,b,c=[1,2,3]
+# print(a,b,c) #1 2 3
+
+# nums=[1,2,3]
+
+# for i in range(len(nums)):
+#     print(nums[i])
+
+# for n in nums:
+#     print(n)
+    
+# for i,n in enumerate(nums):
+#     print(i,n)
+# '''
+# 1
+# 2
+# 3
+# 1
+# 2
+# 3
+# 0 1
+# 1 2
+# 2 3
+# '''
 
