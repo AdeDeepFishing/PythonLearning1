@@ -374,3 +374,207 @@
 # 2 3
 # '''
 
+# nums1=[1,3,5]
+# nums2=[2,4,6]
+# for n1, n2 in zip(nums1,nums2):
+#     print(n1,n2)
+# '''
+# 1 2
+# 3 4
+# 5 6
+# '''
+
+# arr=[2,3,8,2,5,8,4,3,2,30]
+# arr.sort()
+# print(arr) # [2, 2, 2, 3, 3, 4, 5, 8, 8, 30]
+# arr.sort(reverse=True)
+# print(arr) #[30, 8, 8, 5, 4, 3, 3, 2, 2, 2]
+
+# arr=["adelina","yanwen","alice","jane","lisa"]
+# arr.sort()
+# print(arr)
+# # sort by length of string
+# arr.sort(key=lambda x:len(x))
+# print(arr)
+# '''
+# ['adelina', 'alice', 'jane', 'lisa', 'yanwen']
+# ['jane', 'lisa', 'alice', 'yanwen', 'adelina']
+# '''
+
+# arr=[i for i in range(5)]
+# print(arr) #[0, 1, 2, 3, 4]
+# arr=[i+i for i in range(5)]
+# print(arr) #[0, 2, 4, 6, 8]
+# #then each array will be unique, different from arr=[[0]*4]*4, that case cannot change individually
+# arr=[[0]*4 for i in range(4)]
+# print(arr) #[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+
+# strings=["ab","cd","ef"]
+# print("".join(strings)) #abcdef
+
+# from collections import deque
+# queue=deque()
+# queue.append(1)
+# queue.append(2)
+# print(queue)
+
+# queue.popleft()
+# print(queue)
+
+# queue.appendleft(1)
+# print(queue)
+
+# queue.pop()
+# print(queue)
+
+# '''
+# deque([1, 2])
+# deque([2])
+# deque([1, 2])
+# deque([1])
+# '''
+
+# #hashset
+# mySet=set()
+# mySet.add(1)
+# mySet.add(2)
+# print(mySet)
+# print(len(mySet))
+# print(1 in mySet)
+# print(2 in mySet)
+# print(3 in mySet)
+# mySet.remove(2)
+# print(2 in mySet)
+# '''
+# {1, 2}
+# 2
+# True
+# True
+# False
+# False
+# '''
+
+# #hashmap (ada dict)
+# myMap={}
+# myMap["alice"]=88
+# myMap["Bob"]=66
+# print(myMap)
+# print(len(myMap))
+
+# myMap["alice"]=80
+# print(myMap)
+
+# print("alice" in myMap)
+# myMap.pop("alice")
+# print("alice" in myMap)
+# myMap={"alice":90,"bob":70}
+# print(myMap)
+# '''
+# {'alice': 88, 'Bob': 66}
+# 2
+# {'alice': 80, 'Bob': 66}
+# True
+# False
+# {'alice': 90, 'bob': 70}
+# '''
+
+# myMap={i:2*i for i in range(3)}
+# print(myMap) #{0: 0, 1: 2, 2: 4}
+
+# myMap={"alice":90,"bob":70}
+# for key in myMap:
+#     print(key,myMap[key])
+
+# for val in myMap.values():
+#     print(val)
+    
+# for key,val in myMap.items():
+#     print(key,val)
+
+# '''
+# alice 90
+# bob 70
+# 90
+# 70
+# alice 90
+# bob 70
+# '''
+
+# #tuple: like array but immutable
+# tup=(1,2,3)
+# print(tup) #(1,2,3)
+# print(tup[0]) #1
+# print(tup[-1]) #3
+# tup[0]=0 #TypeError: 'tuple' object does not support item assignment
+
+# #can be sed as key for hash map/set
+# myMap={(1,2):3}
+# print(myMap[(1,2)]) #3
+
+# mySet=set()
+# mySet.add((1,2))
+# print((1,2) in mySet) #True
+
+# import heapq
+# minHeap=[]
+# heapq.heappush(minHeap,3)
+# heapq.heappush(minHeap,2)
+# heapq.heappush(minHeap,4)
+# print(minHeap) #[2,3,4]
+# print(minHeap[0]) #2
+
+# while len(minHeap):
+#     print(heapq.heappop(minHeap))
+#     '''
+#     2
+#     3
+#     4
+#     '''
+
+# import heapq
+# maxHeap = []
+# heapq.heappush(maxHeap,-3)
+# print(maxHeap) #[-3]
+# heapq.heappush(maxHeap,-2)
+# print(maxHeap) #[-3, -2]
+# heapq.heappush(maxHeap,-4)
+# print(maxHeap) #[-4, -2, -3]
+
+# print(-1*maxHeap[0]) #4
+
+# while len(maxHeap):
+#     print(-1*heapq.heappop(maxHeap))
+# '''
+# 4
+# 3
+# 2
+# '''
+
+# def myFun(n,m):
+#     return n*m
+# print(myFun(3,7))
+
+# def double(arr,val):
+#     def helper():
+#         for i,n in enumerate(arr):
+#             arr[i]*=2
+#         nonlocal val
+#         val *=2
+#     helper()
+#     print(arr,val)
+
+# nums=[1,2]
+# val=3
+# print(double(nums,val))  
+
+# class MyClass:
+#     def __init__(self,nums):
+#         self.nums=nums
+#         self.size=len(nums)
+        
+#     def getLength(self):
+#         return self.size
+    
+#     def getDoubleLength(self):
+#         return 2*self.getLength() 
+
