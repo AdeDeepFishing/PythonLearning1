@@ -181,6 +181,51 @@ transfer rate
 '''
 
 '''
+time complexity
 
+O(1)-constant time
 
+    print("Yo")
+
+O(n)-linear time
+
+    for i in range()
+
+O(log n)-binary search
+
+    #猜数字，100，50，25，13，。。。
+
+O(n^2)
+
+    for i in range():
+    
+        for k in range():
+
+in the graph: algorithm time complexity, As you can see, the best time to aim for is O(1); O(log n) is still excellent. O(n) is ok and O(n^2) is not great. 
+
+'''
+
+'''
+space complexity
+
+    Auxiliary space refers to the extra space or the temporary space used by an algorithm
+
+    space complexity == input space + auxiliary space
+'''
+
+#Week 2
+#Basic Data Structures
+
+'''
+basic data structures
+    
+    mutable, immutable
+    
+        u can or cannot change a string after it has been created.
+    
+        in python is immutable
+        
+        reduce memory consumption, immutable points all to the same location
+    
+    linear, non-linear(tree, graph)
 '''
