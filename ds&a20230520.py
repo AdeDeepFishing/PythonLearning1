@@ -229,3 +229,46 @@ basic data structures
     
     linear, non-linear(tree, graph)
 '''
+
+'''
+strings
+
+    \ gonna make sure the words will still be in ""
+    
+    e.g.: "yanwen says \"dont worry, we will make it\" to herself."
+
+integers
+
+booleans
+
+arrays
+
+objects
+
+'''
+
+'''
+list & set
+
+    list: ordered, mutable, duplicates
+    
+        linked list: each element points to the next one
+    
+    set: unordered, mutable, no duplicates
+    
+        hashing function: hash(key) = value
+        
+        O(1) to find an element in a set
+    
+    tuple: ordered, immutable, duplicates
+'''
+
+'''
+stack & queue
+
+    lifo: last in first out
+
+    stack: LIFO, push, pop, peek(top), search, isEmpty, using in deck
+    
+    queue: FIFO, enqueue, dequeue
+'''
