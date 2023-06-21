@@ -272,3 +272,72 @@ stack & queue
     
     queue: FIFO, enqueue, dequeue
 '''
+
+'''
+tree
+
+    root(top level node of a tree), node, leaf(node with no children)
+    
+    path: sequence of nodes
+    
+    size: total number of nodes
+    
+    binary tree: each node has at most 2 children, must have a key so that it can be easily identified
+    
+    binary search tree: left child < parent < right child
+    
+    balanced binary search tree: height of left and right subtree differ by at most 1
+
+    lookup, insert, delete: O(log n)
+'''
+
+'''
+hash table
+
+    hash function: hash(key) = value
+    
+    MD5, SHA, CRC32
+    
+    big o notation
+    
+    collision
+    
+        2 keys have the same hash value
+        
+        birthday paradox: 23 people, 50% chance of 2 people having the same birthday
+        
+        how to solve:
+        
+            grow the table for every occurrence of a collision, increase complexity
+        
+'''
+
+'''
+heap
+
+    behave like queue
+    
+    assign priority to each element
+    
+    max heap: parent > children
+    
+    min heap: parent < children
+    
+    insert, find_max, delete_max
+    
+    min_heap, decrease_key, increase_key, delete_key
+'''
+
+'''
+graph
+    
+    vertex(node), edge, weight
+    
+    breadth first search
+    
+        shortest path
+        
+        vehicle routing, destinations, most efficient route
+    
+    depth first search: find a path   
+'''
