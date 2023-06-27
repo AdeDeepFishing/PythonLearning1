@@ -341,3 +341,15 @@ graph
     
     depth first search: find a path   
 '''
+
+#Week 3
+#Algorithms
+'''
+sorting algorithms
+
+    selection sort: find the smallest one on the rest of the list, and compare with the first one
+    
+    insertion sort: insert the next element into the correct position of the sorted list, check itself and the left side number, if itself is smaller than the left side, swap
+    
+    quick sort: pick a pivot, put all the smaller ones to the left, and the bigger ones to the right, then do the same thing to the left and right side
+'''
