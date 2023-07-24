@@ -353,3 +353,44 @@ sorting algorithms
     
     quick sort: pick a pivot, put all the smaller ones to the left, and the bigger ones to the right, then do the same thing to the left and right side
 '''
+
+'''
+Selection sort
+
+    find the smallest one on the rest of the list, and compare with the first one, if its smaller, swap
+    
+    find the second smallest and compare with the second one, if its smaller, swap
+    
+    repeat until the end
+'''
+
+'''
+Quick sort
+
+    pick a pivot, put all the smaller ones to the left, and the bigger ones to the right, then do the same thing to the left and right side
+    
+    recursively apply the same steps to the left and right side; baw case crucial because it will affect the time complexity
+'''
+
+'''
+dynamic programming
+
+    divide and conquer ( means breaking a problem down into smaller subproblems, solving each subproblem recursively, and then combining the results of each subproblem to form a solution to the original problem
+    
+    memoization ( means caching the results of the subproblems so that we don't have to recompute them when needed later
+    
+    tabulation
+    
+    fibonacci sequence
+'''
+
+'''
+greedy algorithms
+
+    always choose the best option, might not be the best in total, but its the best in the next one
+    
+    knapsack problem
+    
+    traveling salesman problem
+'''
+
